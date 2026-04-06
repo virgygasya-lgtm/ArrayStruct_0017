@@ -28,3 +28,6 @@ int main()
     getline(cin, mhs.alamat.Desa);
     cout << "isikan Dta Usia : ";
     cin >> mhs.umur;
+
+    cout <<"Data Mahasiswa"<< endl;
+    cout << "Nama : " << mhs.nama << endl;
