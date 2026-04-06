@@ -31,3 +31,7 @@ int main()
 
     cout <<"Data Mahasiswa"<< endl;
     cout << "Nama : " << mhs.nama << endl;
+    cout << "kota : "<< mhs.alamat.kota << endl;
+    cout << "Desa : "<< mhs.alamat.Desa << endl;
+    cout << "usia : "<< mhs.umur << endl;
+}
