@@ -47,4 +47,4 @@ int main()
     cout << "Desa : " << mhs[i].alamat.desa << endl;
     cout << "Usia : " << mhs[i].umur << endl;
    }
-}
+} 
