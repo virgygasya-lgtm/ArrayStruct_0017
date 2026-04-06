@@ -18,26 +18,33 @@ struct mahasiswa
 int main()
 {
     // deklarasi variable struct
-    mahasiswa mhs;
+    mahasiswa mhs[3];
 
    // mengisi data
+   for (int i= 0; i <= 2; i++)
+   {
     cout << "Isikan data nama : ";
-    getline(cin, mhs.nama);
+    getline(cin, mhs[i].nama);
 
     cout << "Isikan data kota : ";
-    getline(cin, mhs.alamat.kota);
+    getline(cin, mhs[i].alamat.kota);
 
     cout << "Isikan data desa : ";
-    getline(cin, mhs.alamat.desa);
+    getline(cin, mhs[i].alamat.desa);
 
     cout << "Isikan data usia : ";
-    cin >> mhs.umur;
+    cin >> mhs[i].umur;
+    cin.ignore();
+   }
 
+   for (int i= 0; i <= 2; i++)
+   {
     cout << endl;
 
     cout << "Data Mahasiswa" << endl;
-    cout << "Nama : " << mhs.nama << endl;
-    cout << "Kota : " << mhs.alamat.kota << endl;
-    cout << "Desa : " << mhs.alamat.desa << endl;
-    cout << "Usia : " << mhs.umur << endl;
+    cout << "Nama : " << mhs[i].nama << endl;
+    cout << "Kota : " << mhs[i].alamat.kota << endl;
+    cout << "Desa : " << mhs[i].alamat.desa << endl;
+    cout << "Usia : " << mhs[i].umur << endl;
+   }
 }
