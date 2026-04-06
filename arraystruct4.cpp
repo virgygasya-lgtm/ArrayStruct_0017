@@ -23,11 +23,13 @@ int main()
     //Mengisi data
     cout << "isikan Data Nama : ";
     getline(cin, mhs.nama);
-    
+
     cout<< "isikan data kota : ";
     getline(cin, mhs.alamat.kota);
+
     cout << "isikan Dta Desa : ";
     getline(cin, mhs.alamat.Desa);
+    
     cout << "isikan Dta Usia : ";
     cin >> mhs.umur;
 
